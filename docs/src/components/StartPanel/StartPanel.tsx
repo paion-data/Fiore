@@ -121,7 +121,7 @@ function ComponentPanel() {
 export function HeaderPanel() {
   return (
       <div>
-        <h1 id="start-panel-header" className="header-font">
+        <h1 id="start-panel-header">
           Fiore
         </h1>
          <h1 id="start-panel-sub-header">

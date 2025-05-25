@@ -22,61 +22,10 @@ funzionalità disponibili, come utilizzarle, esempi e altro ancora!
 - Monitoraggio delle applicazioni ELK
 - Configurazione flessibile del servizio web
 
-🚀 Avvio rapido
----------------
+🚀 Quick Start
+--------------
 
-### Avvio di un container
-
-Assicurati che Docker sia installato
-([_Installazione di Docker_](https://docker.qubitpi.org/desktop/setup/install/mac-install/)), quindi esegui questi comandi al clic:
-
-> [!IMPORTANTE]
->
-> Sostituisci `OPENAI_API_KEY` qui sotto con la chiave effettiva che puoi ottenere
-> [qui](https://platform.openai.com/api-keys)
-
-```console
-export OPENAI_API_KEY=...
-docker run -it -p 8080:8080 -e OPENAI_API_KEY=$OPENAI_API_KEY jack20191124/fiore
-```
-
-Ecco fatto. Un endpoint di healthcheck può essere bloccato con
-
-```console
-curl -v localhost:8080/v1/healthcheck
-```
-
-che restituirebbe
-
-```console
-$ curl -v localhost:8080/v1/healthcheck
-* Tentativo 127.0.0.1:8080...
-* Connesso a localhost (127.0.0.1) porta 8080 (#0)
-> GET /v1/healthcheck HTTP/1.1
-> Host: localhost:8080
-> User-Agent: curl/7.85.0
-> Accetta: */*
->
-* Contrassegna il bundle come non supporta multiuso
-< HTTP/1.1 200 OK
-< Content-Length: 0
-< Server: Jetty(11.0.15)
-<
-* Connessione n. 0 all'host localhost lasciata intatta
-```
-
-### Invio della prima chat Richiesta
-
-```console
-curl --location 'http://localhost:8080/v1/openai/chat' --header 'Content-Type: application/json' --data '{
-"message": "Hello"
-}' -v
-```
-
-Ora lo sviluppatore può iniziare ad aggiungere valori aziendali senza dover ripetere i lunghi lavori di scaffolding. Per
-procedere da qui, incluso il recupero e lo sviluppo del codice sorgente del servizio web, consultare la
-[documentazione][Documentazione]
-per i dettagli.
+Avvia un servizio di qualità di produzione su [fiore.qubitpi.org](https://fiore.qubitpi.org/it/docs/intro).
 
 Licenza
 -------

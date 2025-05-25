@@ -30,12 +30,6 @@
   user-select: none;
 }
 
-.header-font {
-  font-family: 'inter_webfont', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji';
-}
-
 /* REF-39 - fade in */
 
 /* use class instead of a selector when we the required element reference is available from the very start */

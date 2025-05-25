@@ -31,9 +31,6 @@ const config: Config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'it'],
@@ -87,8 +84,9 @@ const config: Config = {
         },
         {
           href: 'https://github.com/QubitPi/Fiore',
-          label: 'GitHub',
+          label: ' ',
           position: 'right',
+          className: 'header-icon-link header-github-link',
         },
       ],
     },
@@ -108,8 +106,8 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Discussions',
-              href: 'https://github.com/QubitPi/Fiore/discussions',
+              label: 'Ollama',
+              href: 'https://ollama.qubitpi.org/',
             },
           ],
         },
@@ -124,6 +122,14 @@ const config: Config = {
               label: 'GitHub',
               href: 'https://github.com/QubitPi/Fiore',
             },
+            {
+                label: 'Jiaqi Liu',
+                href: 'https://github.com/QubitPi',
+            },
+            {
+                label: "Jiaqi's Blog",
+                href: 'https://leadership.qubitpi.org/',
+            },
           ],
         },
       ],
@@ -133,11 +139,6 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
       additionalLanguages: ["java", "bash", "json"]
-    },
-    algolia: {
-      appId: '9U0KDRI80N',
-      apiKey: 'b52ee70139e257c524de98470565cdb4',
-      indexName: 'jersey-webservice-template'
     },
   } satisfies Preset.ThemeConfig,
 };
