@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qubitpi.chatbotws.web.endpoints;
+package com.qubitpi.fiore.web.endpoints;
 
-import com.qubitpi.chatbotws.config.OpenaiConfig;
+import com.qubitpi.fiore.config.OpenaiConfig;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qubitpi.chatbotws.application;
+package com.qubitpi.fiore.application;
 
-import com.qubitpi.chatbotws.web.endpoints.OpenaiServlet;
-import com.qubitpi.chatbotws.web.filters.CorsFilter;
+import com.qubitpi.fiore.web.endpoints.OpenaiServlet;
+import com.qubitpi.fiore.web.filters.CorsFilter;
 
 import org.glassfish.hk2.utilities.Binder;
 

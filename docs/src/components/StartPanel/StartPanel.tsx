@@ -121,7 +121,7 @@ export function HeaderPanel() {
   return (
       <div>
         <h1 id="start-panel-header" className="header-font">
-          Chatbot WS
+          Fiore
         </h1>
          <h1 id="start-panel-sub-header">Framework agnostic chat component to power AI apps of tomorrow</h1>
       </div>

@@ -13,9 +13,9 @@
 # limitations under the License.
 FROM maven:3.8.3-openjdk-17 as build
 
-RUN mkdir /chatbot-ws
-COPY . /chatbot-ws
-RUN cd /chatbot-ws && mvn clean package -Dmaven.test.skip=true
+RUN mkdir /fiore
+COPY . /fiore
+RUN cd /fiore && mvn clean package -Dmaven.test.skip=true
 
 FROM ubuntu:22.04
 
@@ -48,7 +48,7 @@ RUN rm jetty-home-$JETTY_VERSION.tar.gz
 RUN mkdir $JETTY_BASE
 RUN cd $JETTY_BASE && java -jar $JETTY_HOME/start.jar --add-module=annotations,server,http,deploy,servlet,webapp,resources,jsp
 
-COPY --from=build /chatbot-ws/target/chatbot-ws-$WS_VERSION.war $JETTY_WEBAPPS_DIR/ROOT.war
+COPY --from=build /fiore/target/fiore-$WS_VERSION.war $JETTY_WEBAPPS_DIR/ROOT.war
 
 # See https://stackoverflow.com/a/37904830
 ENTRYPOINT cd $JETTY_BASE && java -jar $JETTY_HOME/start.jar

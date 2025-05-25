@@ -18,15 +18,15 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'ChatbotWS',
+  title: 'Fiore',
   tagline: 'You can innovate given the right technology',
   favicon: 'img/favicon.ico',
 
-  url: 'https://chatbot.qubitpi.org',
+  url: 'https://fiore.qubitpi.org',
   baseUrl: '/',
 
   organizationName: 'QubitPi',
-  projectName: 'chatbot-ws',
+  projectName: 'Fiore',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -45,12 +45,12 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/QubitPi/chatbot-ws/tree/master/docs/',
+          editUrl: 'https://github.com/QubitPi/Fiore/tree/master/docs/',
         },
         blog: {
           showReadingTime: true,
           blogSidebarCount: 'ALL',
-          editUrl: 'https://github.com/QubitPi/chatbot-ws/tree/master/docs/',
+          editUrl: 'https://github.com/QubitPi/Fiore/tree/master/docs/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -63,9 +63,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/logo.png',
     navbar: {
-      title: 'ChatbotWS',
+      title: 'Fiore',
       logo: {
-        alt: 'ChatbotWS Logo',
+        alt: 'Fiore Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -77,12 +77,12 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: "https://chatbot.qubitpi.org/apidocs",
+          href: "https://fiore.qubitpi.org/apidocs",
           label: "API",
           position: "left",
         },
         {
-          href: 'https://github.com/QubitPi/chatbot-ws',
+          href: 'https://github.com/QubitPi/Fiore',
           label: 'GitHub',
           position: 'right',
         },
@@ -105,7 +105,7 @@ const config: Config = {
           items: [
             {
               label: 'Discussions',
-              href: 'https://github.com/QubitPi/chatbot-ws/discussions',
+              href: 'https://github.com/QubitPi/Fiore/discussions',
             },
           ],
         },
@@ -118,7 +118,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/QubitPi/chatbot-ws',
+              href: 'https://github.com/QubitPi/Fiore',
             },
           ],
         },

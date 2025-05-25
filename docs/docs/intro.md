@@ -9,7 +9,7 @@ Getting Started
 :::caution
 
 Before proceeding, it is important to note that __we DO NOT support Spring/Spring Boot paradigm__.
-[ChatbotWS] runs as a **[JAX-RS]** webservice backed by its reference implementation Jersey running
+[Fiore] runs as a **[JAX-RS]** webservice backed by its reference implementation Jersey running
 as a WAR inside [Jetty] container.
 
 More info about difference between JAX-RS and Spring can be found in [this thread](https://stackoverflow.com/a/42955575)
@@ -32,7 +32,7 @@ commands:
 
 ```console
 export OPENAI_API_KEY=...
-docker run  -it -p 8080:8080 -e OPENAI_API_KEY=$OPENAI_API_KEY jack20191124/chatbot-ws
+docker run  -it -p 8080:8080 -e OPENAI_API_KEY=$OPENAI_API_KEY jack20191124/fiore
 ```
 
 That's it. A healthcheck endpoint can be pinned with
@@ -76,5 +76,5 @@ details:
 - [Configuration](configuration)
 
 [JAX-RS]: https://jcp.org/en/jsr/detail?id=370
-[ChatbotWS]: https://chatbot.qubitpi.org/
+[Fiore]: https://fiore.qubitpi.org/
 [Jetty]: https://en.wikipedia.org/wiki/Jetty_(web_server)

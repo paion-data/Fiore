@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qubitpi.chatbotws
+package com.qubitpi.fiore
 
-import com.qubitpi.chatbotws.resource.TestEndpoint
+import com.qubitpi.fiore.resource.TestEndpoint
 
 import org.eclipse.jetty.server.Server
 import org.glassfish.jersey.server.ResourceConfig

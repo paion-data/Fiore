@@ -8,7 +8,7 @@ The following guide is intended to help developers who maintain or want to make 
 Preparing for Local Development
 -------------------------------
 
-This section discusses the one-time setup in order to develop ChatbotWS.
+This section discusses the one-time setup in order to develop Fiore.
 
 ### Installing Java & Maven (on Mac)
 
@@ -37,7 +37,7 @@ Make sure to execute the `sudo ln -sfn`, `echo 'export PATH=...`, and the `expor
 
 :::tip
 
-ChatbotWS is built using maven. Maven uses a separate JDK version, which can be seen via `mvn -v`. If it's not JDK 17, we
+Fiore is built using maven. Maven uses a separate JDK version, which can be seen via `mvn -v`. If it's not JDK 17, we
 should have Maven point to our JDK 17 using [JAVA_HOME](https://stackoverflow.com/a/2503679):
 
 ```bash
@@ -60,24 +60,24 @@ OpenJDK 64-Bit Server VM (build 17.0.10+9, mixed mode)
 
 ### Installing Docker Engine
 
-ChatbotWS has [Docker-based integration tests]; it also supports
-[running template webserivce in Docker][chatbot-ws Dockerfile]. Docker can be installed by following its
+Fiore has [Docker-based integration tests]; it also supports
+[running template webserivce in Docker][Fiore Dockerfile]. Docker can be installed by following its
 [official instructions](https://docs.docker.com/desktop/install/mac-install/)
 
 Getting Source Code
 -------------------
 
 ```bash
-git clone git@github.com:QubitPi/chatbot-ws.git
-cd chatbot-ws
+git clone git@github.com:QubitPi/Fiore.git
+cd Fiore
 ```
 
-### Syncing up with ChatbotWS's Code Styles with IntelliJ
+### Syncing up with Fiore's Code Styles with IntelliJ
 
-For the moment, we have distilled the most important code style conventions with respect to ChatbotWS's code as IntelliJ
+For the moment, we have distilled the most important code style conventions with respect to Fiore's code as IntelliJ
 settings. If IntelliJ is used for IDE, we may import these code style settings by importing the
-[ChatbotWS-Project-intellij-code-style.xml][style config] file in the root of the repo. The setting for the project will
-appear as a new Scheme named "chatbot-ws-Project" under IDE's __Editor__ -> __Code Style__ section.
+[Fiore-Project-intellij-code-style.xml][style config] file in the root of the repo. The setting for the project will
+appear as a new Scheme named "Fiore-Project" under IDE's __Editor__ -> __Code Style__ section.
 
 Please also enable "remove unused imports" by __Editor__ -> __General__ -> __Auto Import__ -> __Optimize Imports on the
 Fly__, which will automatically remove unused imports.
@@ -104,7 +104,7 @@ For IT tests, we use [Testcontainers] instead of [jcabi-mysql] because the latte
 Packaging
 ---------
 
-A [WAR file](https://en.wikipedia.org/wiki/WAR_(file_format)) named __chatbot-ws-1.0-SNAPSHOT.war__ will
+A [WAR file](https://en.wikipedia.org/wiki/WAR_(file_format)) named __fiore-1.0-SNAPSHOT.war__ will
 be generated under _target_ directory for [running in Jetty](#running-webservice-in-standalone-jetty-production) with
 the command below:
 
@@ -125,10 +125,10 @@ We can obtain the image in one of the 2 approaches below:
 
 #### Docker Hub
 
-We can pull the image from [my docker hub](https://hub.docker.com/r/jack20191124/chatbot-ws/):
+We can pull the image from [my docker hub](https://hub.docker.com/r/jack20191124/fiore/):
 
 ```bash
-docker pull jack20191124/chatbot-ws
+docker pull jack20191124/fiore
 ```
 
 #### GitHub
@@ -136,12 +136,12 @@ docker pull jack20191124/chatbot-ws
 We could also build the image from [source][Docker]:
 
 ```bash
-git clone https://github.com/QubitPi/chatbot-ws.git
-cd chatbot-ws
-docker build -t jack20191124/chatbot-ws .
+git clone https://github.com/QubitPi/Fiore.git
+cd Fiore
+docker build -t jack20191124/fiore .
 ```
 
-Please note that the `jack20191124/chatbot-ws` in the last command is the image name; we could replace
+Please note that the `jack20191124/fiore` in the last command is the image name; we could replace
 that value with anything preferred
 
 ### Standing up a Container
@@ -157,13 +157,13 @@ Please replace the `OPENAI_API_KEY` below with the actual key which can be obtai
 
 ```console
 export OPENAI_API_KEY=...
-docker run --name=chatbot-ws -it \
+docker run --name=fiore -it \
     -p 8080:8080 \
     -e OPENAI_API_KEY=$OPENAI_API_KEY \
-    jack20191124/chatbot-ws
+    jack20191124/fiore
 ```
 
-- __name=chatbot-ws__: the container is named "chatbot-ws". We can change it
+- __name=fiore__: the container is named "fiore". We can change it
   accordingly.
 - __-p 8080:8080__: 8080 is the port where webservice will listen on. With this port forwarding, we will be able to
   access webservice from host machine web browser at `localhost:8080`
@@ -185,7 +185,7 @@ Running Webservice in Standalone Jetty
 
 ### Download Jetty
 
-For JDK __17__, which is the version ChatbotWS runs on, it's been tested that Jetty _11.0.15_ worked. Hence, we will use
+For JDK __17__, which is the version Fiore runs on, it's been tested that Jetty _11.0.15_ worked. Hence, we will use
 ["11.0.15" release](https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/11.0.15/jetty-home-11.0.15.tar.gz) as
 an example:
 
@@ -262,12 +262,12 @@ If tabs still come out at 2 spaces when hitting TAB or Enter, not 4 spaces, try:
 2. Do you have any .editorconfig files anywhere in the path of that file? Settings from .editorconfig
    ("Settings | Editor | Code Style") have priority (will overwrite) over your IDE settings.
 
-[Docker]: https://github.com/QubitPi/chatbot-ws/blob/master/Dockerfile
-[Docker-based integration tests]: https://github.com/QubitPi/chatbot-ws/blob/master/src/test/groovy/com/qubitpi/chatbotws/DockerITSpec.groovy
+[Docker]: https://github.com/QubitPi/Fiore/blob/master/Dockerfile
+[Docker-based integration tests]: https://github.com/QubitPi/Fiore/blob/master/src/test/groovy/com/qubitpi/Fiore/DockerITSpec.groovy
 
 [jcabi-mysql]: https://mysql.jcabi.com/
-[chatbot-ws Dockerfile]: https://github.com/QubitPi/chatbot-ws/blob/master/Dockerfile
+[Fiore Dockerfile]: https://github.com/QubitPi/Fiore/blob/master/Dockerfile
 
-[style config]: https://github.com/QubitPi/chatbot-ws/blob/master/ChatbotWS-Project-intellij-code-style.xml
+[style config]: https://github.com/QubitPi/Fiore/blob/master/Fiore-Project-intellij-code-style.xml
 
 [Testcontainers]: https://qubitpi.github.io/testcontainers-java/

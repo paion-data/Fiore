@@ -13,36 +13,42 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qubitpi.chatbotws.web.endpoints;
+package com.qubitpi.fiore.resource;
+
+import com.qubitpi.fiore.JettyServerFactory;
+
+import org.glassfish.jersey.server.ResourceConfig;
 
 import jakarta.inject.Singleton;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
-import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import net.jcip.annotations.Immutable;
 import net.jcip.annotations.ThreadSafe;
 
 /**
- * Endpoint that contains a basic sanity-check.
+ * A JAX-RS resource class used for testing {@link JettyServerFactory}.
+ *
+ * see {@link JettyServerFactory#newInstance(int, String, ResourceConfig)} for why we
+ * need to prefix @Path with "/v1"
  */
 @Singleton
 @Immutable
 @ThreadSafe
-@Path("/healthcheck")
-@Produces(MediaType.APPLICATION_JSON)
-public class HealthcheckServlet {
+@Path("/v1/example")
+public class TestEndpoint {
 
     /**
-     * A webservice sanity-check endpoint.
+     * A sanity check endpoint that simply returns a 200 response.
      *
-     * @return 200 OK response
+     * @return a simple success response
      */
     @GET
-    public Response healthcheck() {
+    @Path("/test")
+    public Response test() {
         return Response
                 .status(Response.Status.OK)
+                .entity("SUCCESS")
                 .build();
     }
 }
