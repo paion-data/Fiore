@@ -100,14 +100,9 @@ const config: Config = {
               label: 'Documentation',
               to: '/docs/intro',
             },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
             {
-              label: 'Ollama',
-              href: 'https://ollama.qubitpi.org/',
+                label: 'Ollama',
+                href: 'https://ollama.qubitpi.org/',
             },
           ],
         },
