@@ -6,6 +6,12 @@ Fiore
 [![GitHub Workflow Status][GitHub Workflow Status]](https://github.com/QubitPi/Fiore/actions/workflows/ci-cd.yaml)
 [![Apache License Badge]][Apache License, Version 2.0]
 
+> [!TIP]
+>
+> Read this in other languages:
+>
+> - [Italiano](./README.it.md)
+
 __Fiore__ is a [JSR 370] webservice template that lets us spin up Java webservice quickly through [GitHub templates].
 Whether we want to create a chatbot that leverages popular APIs such as ChatGPT or connect to our own custom service,
 this template can do it all! Explore [fiore.qubitpi.org](https://fiore.qubitpi.org/) to view all of its available features, how to use them,
@@ -81,7 +87,7 @@ for details.
 License
 -------
 
-The use and distribution terms for [fiore]() are covered by the [Apache License, Version 2.0].
+The use and distribution terms for [Fiore]() are covered by the [Apache License, Version 2.0].
 
 [Apache License Badge]: https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white
 [Apache License, Version 2.0]: https://www.apache.org/licenses/LICENSE-2.0

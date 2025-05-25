@@ -8,9 +8,8 @@ Getting Started
 
 :::caution
 
-Before proceeding, it is important to note that __we DO NOT support Spring/Spring Boot paradigm__.
-[Fiore] runs as a **[JAX-RS]** webservice backed by its reference implementation Jersey running
-as a WAR inside [Jetty] container.
+Before proceeding, it is important to note that __we DO NOT support Spring/Spring Boot paradigm__. [Fiore] runs as a
+__[JAX-RS]__ webservice backed by its reference implementation Jersey running as a WAR inside [Jetty] container.
 
 More info about difference between JAX-RS and Spring can be found in [this thread](https://stackoverflow.com/a/42955575)
 
@@ -25,10 +24,12 @@ Please make sure Docker is installed
 ([_Installing Docker_](https://docker.qubitpi.org/desktop/setup/install/mac-install/)), then execute this on-click
 commands:
 
-> [!IMPORTANT]
->
-> Please replace the `OPENAI_API_KEY` below with the actual key which can be obtained
-> [here](https://platform.openai.com/api-keys)
+:::tip
+
+Please replace the `OPENAI_API_KEY` below with the actual key which can be obtained
+[here](https://platform.openai.com/api-keys)
+
+:::
 
 ```console
 export OPENAI_API_KEY=...

@@ -1,9 +1,9 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 title: Development
 ---
 
-The following guide is intended to help developers who maintain or want to make changes to the Chatbot WS template.
+The following guide is intended to help developers who maintain or want to make changes to the Fiore.
 
 Preparing for Local Development
 -------------------------------
@@ -104,9 +104,8 @@ For IT tests, we use [Testcontainers] instead of [jcabi-mysql] because the latte
 Packaging
 ---------
 
-A [WAR file](https://en.wikipedia.org/wiki/WAR_(file_format)) named __fiore-1.0-SNAPSHOT.war__ will
-be generated under _target_ directory for [running in Jetty](#running-webservice-in-standalone-jetty-production) with
-the command below:
+A [WAR file](https://en.wikipedia.org/wiki/WAR_(file_format)) named __fiore-1.0-SNAPSHOT.war__ will be generated under
+_target_ directory for [running in Jetty](#running-webservice-in-standalone-jetty-production) with the command below:
 
 ```bash
 mvn clean package
@@ -163,8 +162,7 @@ docker run --name=fiore -it \
     jack20191124/fiore
 ```
 
-- __name=fiore__: the container is named "fiore". We can change it
-  accordingly.
+- __name=fiore__: the container is named "fiore". We can change it accordingly.
 - __-p 8080:8080__: 8080 is the port where webservice will listen on. With this port forwarding, we will be able to
   access webservice from host machine web browser at `localhost:8080`
 

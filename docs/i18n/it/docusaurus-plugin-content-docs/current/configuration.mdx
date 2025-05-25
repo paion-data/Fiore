@@ -1,0 +1,28 @@
+---
+sidebar_position: 3
+title: Configurazione
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Configurazione
+--------------
+
+JAX-RS Jersey non specifica come caricare le configurazioni dell'applicazione. Fiore, tuttavia,
+utilizza una libreria chiamata [owner].
+
+Le configurazioni in questa pagina possono essere impostate da diverse fonti nel seguente ordine:
+
+1. le [variabili d'ambiente del sistema operativo]; ad esempio, una variabile d'ambiente può essere impostata con
+   `export DB_URL="jdbc:mysql://db/elide?serverTimezone=UTC"`
+2. le [proprietà di sistema Java]; ad esempio, una proprietà di sistema Java può essere impostata utilizzando
+   `System.setProperty("DB_URL", "jdbc:mysql://db/elide?serverTimezone=UTC")`
+3. un file **.properties** posizionato in CLASSPATH. Questo file può essere inserito nella directory sorgente `src/main/resources` con un contenuto, ad esempio, `DB_URL=jdbc:mysql://db/elide?serverTimezone=UTC`
+
+Si noti che la configurazione dell'ambiente ha una priorità maggiore rispetto alle proprietà di sistema Java. Le proprietà di sistema Java hanno una priorità maggiore rispetto alla configurazione basata su file.
+
+[Proprietà di sistema Java]: https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html
+
+[Variabili d'ambiente del sistema operativo]: https://docs.oracle.com/javase/tutorial/essential/environment/env.html
+[proprietario]: https://owner.qubitpi.org/

@@ -23,6 +23,7 @@ import './StartPanel.css';
 import ChatBrowser from "@site/src/components/ChatBrowser";
 import StartPanelParticles from "@site/src/components/StartPanel/StartPanelParticles";
 import {forwardRef, useRef} from "react";
+import Translate from '@docusaurus/Translate';
 
 const Logos = forwardRef((_, ref) => {
   return (
@@ -96,7 +97,7 @@ function ComponentPanel() {
           <ChatBrowser
               demo={true}
               history={[
-                {text: 'What is Chatbot WS?', role: 'user'},
+                {text: 'What is Fiore?', role: 'user'},
                 {text: 'An API agnostic chat webservice.', role: 'ai'},
                 {text: 'What exactly can it be used for?', role: 'user'},
                 {text: 'Deploy it as a webservice to connect to AI APIs.', role: 'ai'},
@@ -123,7 +124,11 @@ export function HeaderPanel() {
         <h1 id="start-panel-header" className="header-font">
           Fiore
         </h1>
-         <h1 id="start-panel-sub-header">Framework agnostic chat component to power AI apps of tomorrow</h1>
+         <h1 id="start-panel-sub-header">
+           <Translate>
+             Framework agnostic chat component to power AI apps of tomorrow
+           </Translate>
+         </h1>
       </div>
   );
 }
