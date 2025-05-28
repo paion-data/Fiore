@@ -265,7 +265,7 @@ Se le tabulazioni escono ancora con 2 spazi quando si preme TAB o Invio, non con
    ("Settings | Editor | Code Style") hanno la priorità (sovrascriveranno) sulle impostazioni dell'IDE.
 
 [Docker]: https://github.com/QubitPi/Fiore/blob/master/Dockerfile
-[Test di integrazione basati su Docker]: https://github.com/QubitPi/Fiore/blob/master/src/test/groovy/com/qubitpi/Fiore/DockerITSpec.groovy
+[Test di integrazione basati su Docker]: https://github.com/QubitPi/Fiore/blob/master/src/test/groovy/org/qubitpi/Fiore/DockerITSpec.groovy
 
 [jcabi-mysql]: https://mysql.jcabi.com/
 [Fiore Dockerfile]: https://github.com/QubitPi/Fiore/blob/master/Dockerfile
