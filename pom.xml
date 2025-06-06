@@ -4,19 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.qubitpi</groupId>
+    <groupId>com.paiondata</groupId>
     <artifactId>fiore</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>Fiore</name>
     <description>Template project for building chatbot webservice running in Jetty</description>
-    <url>https://github.com/QubitPi/Fiore</url>
+    <url>https://github.com/paion-data/Fiore</url>
 
     <developers>
         <developer>
-            <name>Jiaqi Liu</name>
-            <url>https://github.com/QubitPi</url>
+            <name>Paion Data</name>
+            <url>https://github.com/paion-data</url>
         </developer>
     </developers>
 
@@ -292,7 +292,7 @@
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <configLocation>checkstyle.xml</configLocation>
+                    <configLocation>https://raw.githubusercontent.com/paion-data/.github/refs/heads/master/maven/checkstyle.xml</configLocation>
                     <includes>**\/*.java,**\/*.groovy</includes>
                     <resourceIncludes>**/*.properties,**/*.sample</resourceIncludes>
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>

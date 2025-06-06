@@ -68,7 +68,7 @@ Getting Source Code
 -------------------
 
 ```bash
-git clone git@github.com:QubitPi/Fiore.git
+git clone git@github.com:paion-data/Fiore.git
 cd Fiore
 ```
 
@@ -76,8 +76,9 @@ cd Fiore
 
 For the moment, we have distilled the most important code style conventions with respect to Fiore's code as IntelliJ
 settings. If IntelliJ is used for IDE, we may import these code style settings by importing the
-[Fiore-Project-intellij-code-style.xml][style config] file in the root of the repo. The setting for the project will
-appear as a new Scheme named "Fiore-Project" under IDE's __Editor__ -> __Code Style__ section.
+[Paion-Data-WS-Project-intellij-code-style.xml](https://github.com/paion-data/.github/blob/master/intellij/Paion-Data-WS-Project-intellij-code-style.xml)
+file in the root of the repo. The setting for the project will appear as a new Scheme named "Paion-Data-Project" under
+IDE's __Editor__ -> __Code Style__ section.
 
 Please also enable "remove unused imports" by __Editor__ -> __General__ -> __Auto Import__ -> __Optimize Imports on the
 Fly__, which will automatically remove unused imports.
@@ -115,7 +116,7 @@ Running Webservice in Docker
 ----------------------------
 
 Please make sure Docker is installed
-([_Installing Docker_](https://docker.qubitpi.org/desktop/setup/install/mac-install/)), then execute the following
+([_Installing Docker_](https://docs.docker.com/desktop/setup/install/mac-install/)), then execute the following
 commands:
 
 ### Getting the Image
@@ -135,7 +136,7 @@ docker pull jack20191124/fiore
 We could also build the image from [source][Docker]:
 
 ```bash
-git clone https://github.com/QubitPi/Fiore.git
+git clone https://github.com/paion-data/Fiore.git
 cd Fiore
 docker build -t jack20191124/fiore .
 ```
@@ -260,12 +261,10 @@ If tabs still come out at 2 spaces when hitting TAB or Enter, not 4 spaces, try:
 2. Do you have any .editorconfig files anywhere in the path of that file? Settings from .editorconfig
    ("Settings | Editor | Code Style") have priority (will overwrite) over your IDE settings.
 
-[Docker]: https://github.com/QubitPi/Fiore/blob/master/Dockerfile
-[Docker-based integration tests]: https://github.com/QubitPi/Fiore/blob/master/src/test/groovy/org/qubitpi/Fiore/DockerITSpec.groovy
+[Docker]: https://github.com/paion-data/Fiore/blob/master/Dockerfile
+[Docker-based integration tests]: https://github.com/paion-data/Fiore/blob/master/src/test/groovy/com/paiondata/Fiore/DockerITSpec.groovy
 
 [jcabi-mysql]: https://mysql.jcabi.com/
-[Fiore Dockerfile]: https://github.com/QubitPi/Fiore/blob/master/Dockerfile
+[Fiore Dockerfile]: https://github.com/paion-data/Fiore/blob/master/Dockerfile
 
-[style config]: https://github.com/QubitPi/Fiore/blob/master/Fiore-Project-intellij-code-style.xml
-
-[Testcontainers]: https://testcontainers-java.qubitpi.org/
+[Testcontainers]: http://testcontainers-java.paion-data.dev/

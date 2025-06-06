@@ -70,7 +70,7 @@ Ottenere il codice sorgente
 -------------------
 
 ```bash
-git clone git@github.com:QubitPi/Fiore.git
+git clone git@github.com:paion-data/Fiore.git
 cd Fiore
 ```
 
@@ -78,9 +78,10 @@ cd Fiore
 
 Per il momento, abbiamo sintetizzato le convenzioni di stile più importanti relative al codice di Fiore come
 impostazioni di IntelliJ. Se IntelliJ viene utilizzato per l'IDE, è possibile importare queste impostazioni di stile del
-codice importando il file [Fiore-Project-intellij-code-style.xml][Configurazione stile] nella radice del repository. Le
-impostazioni per il progetto appariranno come un nuovo schema denominato "Fiore-Project" nella sezione __Editor__ ->
-__Stile Codice__ dell'IDE.
+codice importando il file
+[Paion-Data-WS-Project-intellij-code-style.xml](https://github.com/paion-data/.github/blob/master/intellij/Paion-Data-WS-Project-intellij-code-style.xml)
+nella radice del repository. Le impostazioni per il progetto appariranno come un nuovo schema denominato
+"Paion-Data-Project" nella sezione __Editor__ -> __Stile Codice__ dell'IDE.
 
 Abilitare anche "rimuovi importazioni inutilizzate" da __Editor__ -> __Generale__ -> __Importazione Automatica__ ->
 __Ottimizza Importazioni al Volo__, che rimuoverà automaticamente le importazioni inutilizzate.
@@ -119,7 +120,7 @@ Esecuzione del servizio web in Docker
 -------------------------------------
 
 Assicurarsi che Docker sia installato
-([_Installing Docker_](https://docker.qubitpi.org/desktop/setup/install/mac-install/)), quindi esegui i seguenti
+([_Installing Docker_](https://docs.docker.com/desktop/setup/install/mac-install/)), quindi esegui i seguenti
 comandi:
 
 ### Ottenere l'immagine
@@ -139,7 +140,7 @@ docker pull jack20191124/fiore
 Possiamo anche compilare l'immagine da [source][Docker]:
 
 ```bash
-git clone https://github.com/QubitPi/Fiore.git
+git clone https://github.com/paion-data/Fiore.git
 cd Fiore
 docker build -t jack20191124/fiore .
 ```
@@ -264,12 +265,10 @@ Se le tabulazioni escono ancora con 2 spazi quando si preme TAB o Invio, non con
 2. Hai file .editorconfig da qualche parte nel percorso di quel file? Le impostazioni di .editorconfig
    ("Settings | Editor | Code Style") hanno la priorità (sovrascriveranno) sulle impostazioni dell'IDE.
 
-[Docker]: https://github.com/QubitPi/Fiore/blob/master/Dockerfile
-[Test di integrazione basati su Docker]: https://github.com/QubitPi/Fiore/blob/master/src/test/groovy/org/qubitpi/Fiore/DockerITSpec.groovy
+[Docker]: https://github.com/paion-data/Fiore/blob/master/Dockerfile
+[Test di integrazione basati su Docker]: https://github.com/paion-data/Fiore/blob/master/src/test/groovy/com/paiondata/Fiore/DockerITSpec.groovy
 
 [jcabi-mysql]: https://mysql.jcabi.com/
-[Fiore Dockerfile]: https://github.com/QubitPi/Fiore/blob/master/Dockerfile
+[Fiore Dockerfile]: https://github.com/paion-data/Fiore/blob/master/Dockerfile
 
-[Configurazione stile]: https://github.com/QubitPi/Fiore/blob/master/Fiore-Project-intellij-code-style.xml
-
-[Testcontainers]: https://testcontainers-java.qubitpi.org/
+[Testcontainers]: http://testcontainers-java.paion-data.dev/
