@@ -1,5 +1,5 @@
 /**
- * Copyright 2025 Jiaqi Liu. All rights reserved.
+ * Copyright 2025 Paion Data. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,10 +22,10 @@ const config: Config = {
   tagline: 'You can innovate given the right technology',
   favicon: 'img/favicon.ico',
 
-  url: 'https://fiore.qubitpi.org',
+  url: 'https://fiore.paion-data.com',
   baseUrl: '/',
 
-  organizationName: 'QubitPi',
+  organizationName: 'paion-data',
   projectName: 'Fiore',
 
   onBrokenLinks: 'warn',
@@ -42,12 +42,12 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/QubitPi/Fiore/tree/master/docs/',
+          editUrl: 'https://github.com/paion-data/Fiore/tree/master/docs/',
         },
         blog: {
           showReadingTime: true,
           blogSidebarCount: 'ALL',
-          editUrl: 'https://github.com/QubitPi/Fiore/tree/master/docs/',
+          editUrl: 'https://github.com/paion-data/Fiore/tree/master/docs/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -78,12 +78,12 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: "https://fiore.qubitpi.org/apidocs",
+          href: "https://fiore.paion-data.com/apidocs",
           label: "API",
           position: "left",
         },
         {
-          href: 'https://github.com/QubitPi/Fiore',
+          href: 'https://github.com/paion-data/Fiore',
           label: ' ',
           position: 'right',
           className: 'header-icon-link header-github-link',
@@ -115,20 +115,16 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/QubitPi/Fiore',
+              href: 'https://github.com/paion-data/Fiore',
             },
             {
-                label: 'Jiaqi Liu',
-                href: 'https://github.com/QubitPi',
-            },
-            {
-                label: "Jiaqi's Blog",
-                href: 'https://leadership.qubitpi.org/',
+              label: 'Paion Data',
+              href: 'https://paion-data.com/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Jiaqi Liu. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Paion Data. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
