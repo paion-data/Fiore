@@ -21,7 +21,7 @@ Quick Start
 ### Spinning Up a Container
 
 Please make sure Docker is installed
-([_Installing Docker_](https://docker.qubitpi.org/desktop/setup/install/mac-install/)), then execute this on-click
+([_Installing Docker_](https://docs.docker.com/desktop/setup/install/mac-install/)), then execute this on-click
 commands:
 
 :::tip
@@ -77,5 +77,5 @@ details:
 - [Configuration](configuration)
 
 [JAX-RS]: https://jcp.org/en/jsr/detail?id=370
-[Fiore]: https://fiore.qubitpi.org/
+[Fiore]: https://fiore.paion-data.com/
 [Jetty]: https://en.wikipedia.org/wiki/Jetty_(web_server)

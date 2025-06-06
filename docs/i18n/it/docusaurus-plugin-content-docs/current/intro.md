@@ -22,7 +22,7 @@ Avvio rapido
 ### Avvia un Contenitore
 
 Assicurati che Docker sia installato
-([Installazione di Docker](https://docker.qubitpi.org/desktop/setup/install/mac-install/)), quindi esegui questi comandi al clic:
+([Installazione di Docker](https://docs.docker.com/desktop/setup/install/mac-install/)), quindi esegui questi comandi al clic:
 
 :::tip
 
@@ -77,5 +77,5 @@ seguenti sezioni per maggiori dettagli:
 - [Configurazione](configuration)
 
 [JAX-RS]: https://jcp.org/en/jsr/detail?id=370
-[Fiore]: https://fiore.qubitpi.org/
+[Fiore]: https://fiore.paion-data.com/
 [Jetty]: https://en.wikipedia.org/wiki/Jetty_(web_server)
