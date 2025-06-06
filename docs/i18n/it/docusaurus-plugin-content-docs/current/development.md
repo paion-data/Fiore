@@ -272,4 +272,4 @@ Se le tabulazioni escono ancora con 2 spazi quando si preme TAB o Invio, non con
 
 [Configurazione stile]: https://github.com/QubitPi/Fiore/blob/master/Fiore-Project-intellij-code-style.xml
 
-[Testcontainers]: https://qubitpi.github.io/testcontainers-java/
+[Testcontainers]: https://testcontainers-java.qubitpi.org/
