@@ -33,7 +33,7 @@ Please replace the `OPENAI_API_KEY` below with the actual key which can be obtai
 
 ```console
 export OPENAI_API_KEY=...
-docker run  -it -p 8080:8080 -e OPENAI_API_KEY=$OPENAI_API_KEY jack20191124/fiore
+docker run  -it -p 8080:8080 -e OPENAI_API_KEY=$OPENAI_API_KEY paiondatahub/fiore
 ```
 
 That's it. A healthcheck endpoint can be pinned with

@@ -33,7 +33,7 @@ Sostituisci `OPENAI_API_KEY` qui sotto con la chiave effettiva che puoi ottenere
 
 ```console
 export OPENAI_API_KEY=...
-docker run  -it -p 8080:8080 -e OPENAI_API_KEY=$OPENAI_API_KEY jack20191124/fiore
+docker run  -it -p 8080:8080 -e OPENAI_API_KEY=$OPENAI_API_KEY paiondatahub/fiore
 ```
 
 Ecco fatto. Un endpoint di controllo dello stato può essere bloccato con

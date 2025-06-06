@@ -36,8 +36,8 @@ I termini di utilizzo e distribuzione di [Fiore]() sono coperti dalla [Licenza A
 [Badge licenza Apache]: https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white
 [Licenza Apache, versione 2.0]: https://www.apache.org/licenses/LICENSE-2.0
 
-[Badge Docker Pulls]: https://img.shields.io/docker/pulls/jack20191124/fiore?style=for-the-badge&logo=docker&color=2596EC
-[URL Docker Hub]: https://hub.docker.com/r/jack20191124/fiore
+[Badge Docker Pulls]: https://img.shields.io/docker/pulls/paiondatahub/fiore?style=for-the-badge&logo=docker&color=2596EC
+[URL Docker Hub]: https://hub.docker.com/r/paiondatahub/fiore
 [Documentazione]: https://fiore.paion-data.com/it/
 
 [Template GitHub]: https://docs.github.com/it/repositories/creating-and-managing-repositories/creating-a-template-repository#about-template-repositories
