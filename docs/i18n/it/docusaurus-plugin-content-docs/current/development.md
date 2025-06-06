@@ -129,10 +129,10 @@ Possiamo ottenere l'immagine in uno dei 2 modi seguenti:
 
 #### Docker Hub
 
-Possiamo estrarre l'immagine dal [mio Docker Hub](https://hub.docker.com/r/jack20191124/fiore/):
+Possiamo estrarre l'immagine dal [mio Docker Hub](https://hub.docker.com/r/paiondatahub/fiore/):
 
 ```bash
-docker pull jack20191124/fiore
+docker pull paiondatahub/fiore
 ```
 
 #### GitHub
@@ -142,10 +142,10 @@ Possiamo anche compilare l'immagine da [source][Docker]:
 ```bash
 git clone https://github.com/paion-data/Fiore.git
 cd Fiore
-docker build -t jack20191124/fiore .
+docker build -t paiondatahub/fiore .
 ```
 
-Si noti che `jack20191124/fiore` nell'ultimo comando è il nome dell'immagine; possiamo sostituire quel valore con
+Si noti che `paiondatahub/fiore` nell'ultimo comando è il nome dell'immagine; possiamo sostituire quel valore con
 qualsiasi altro valore desiderato.
 
 ### Creazione di un container
@@ -164,7 +164,7 @@ export OPENAI_API_KEY=...
 docker run --name=fiore -it \
 -p 8080:8080 \
 -e OPENAI_API_KEY=$OPENAI_API_KEY \
-jack20191124/fiore
+paiondatahub/fiore
 ```
 
 - __name=fiore__: il container si chiama "fiore". Possiamo modificarlo di conseguenza.
