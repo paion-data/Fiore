@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[472],{5513:t=>{t.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"How to Use the ChatGPT API with Java","permalink":"/blog/openai-chatgpt-http-basic","unlisted":false}]}')}}]);

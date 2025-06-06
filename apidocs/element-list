@@ -1,0 +1,4 @@
+com.paiondata.fiore.application
+com.paiondata.fiore.config
+com.paiondata.fiore.web.endpoints
+com.paiondata.fiore.web.filters
