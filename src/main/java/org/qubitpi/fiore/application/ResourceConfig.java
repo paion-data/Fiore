@@ -16,7 +16,6 @@
 package org.qubitpi.fiore.application;
 
 import org.qubitpi.fiore.web.endpoints.OpenaiServlet;
-import org.qubitpi.fiore.web.filters.CorsFilter;
 
 import org.glassfish.hk2.utilities.Binder;
 
@@ -41,9 +40,6 @@ public class ResourceConfig extends org.glassfish.jersey.server.ResourceConfig {
     @Inject
     public ResourceConfig() {
         packages(ENDPOINT_PACKAGE);
-
-        register(CorsFilter.class);
-
         final Binder binder = new BinderFactory().buildBinder();
         register(binder);
     }

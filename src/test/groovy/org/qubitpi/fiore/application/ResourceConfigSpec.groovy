@@ -15,15 +15,13 @@
  */
 package org.qubitpi.fiore.application
 
-import org.qubitpi.fiore.web.filters.CorsFilter
-
 import org.glassfish.jersey.internal.inject.Binder
 
 import spock.lang.Specification
 
 class ResourceConfigSpec extends Specification {
 
-    static final Set<Class> ALWAYS_REGISTERED_FILTERS = [CorsFilter] as Set
+    static final Set<Class> ALWAYS_REGISTERED_FILTERS = [] as Set
 
     @SuppressWarnings('GroovyAccessibility')
     def "Instantiation triggers initialization and binding lifecycles"() {
