@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.paiondata.fiore.application"},{"l":"com.paiondata.fiore.config"},{"l":"com.paiondata.fiore.web.endpoints"},{"l":"com.paiondata.fiore.web.filters"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.paiondata.fiore.application"},{"l":"com.paiondata.fiore.config"},{"l":"com.paiondata.fiore.web.endpoints"}];updateSearchResults();
